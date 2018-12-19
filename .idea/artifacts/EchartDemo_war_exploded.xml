@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="EchartDemo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/EchartDemo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="EchartDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EchartDemo" />
+        </element>
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/../Application/apache-tomcat-9.0.13/webapps" />
+    </root>
+  </artifact>
+</component>

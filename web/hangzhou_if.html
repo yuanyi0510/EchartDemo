@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>杭州固定资产投资</title>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script  src="js/echarts.js"></script>
+</head>
+<body class="gray-bg">
+
+<!-- 为ECharts准备一个具备大小（宽高）的DOM容器-->
+<table width="800px" cellspacing="20px">
+    <tr>
+        <td>
+            <script src="js/get_hangzhou_if.js"></script>
+            <div id='if_bar' style='width:500px;height:400px; margin-right: 30px'>
+                <script src="js/hangzhou_if_bar.js"></script>
+            </div>
+        </td>
+        <td>
+            <script src="js/get_hangzhou_buildings.js"></script>
+            <div id='pie' style='width:400px;height:400px;'>
+                <script src="js/pie.js"></script>
+            </div>
+        </td>
+    </tr>
+    <tr >
+        <td>
+            <script src="js/get_hangzhou_iftotal.js"></script>
+            <div id='total' style='width:500px;height:400px; margin-top: 100px; margin-right: 30px'>
+                <script src="js/compareTotal.js"></script>
+            </div>
+        </td>
+        <td>
+            <div id='leidatu' style='width:400px;height:400px; margin-top: 100px'>
+                <script src="js/leidatu.js"></script>
+            </div>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浙江省2016年各市国民生产总值</title>
+    <link rel="stylesheet" href="css/page.css" />
+    <!--图标样式-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+</head>
+<body background="img/3.jpg" style="background-repeat: no-repeat; background-size: cover">
+<div class="nav"><span >浙江省宏观经济数据可视化</span></div>
+<div class="nav">
+    <ul class="navmenu">
+        <li style="  -webkit-transform:skew(-20deg);"><a href="http://180.76.138.48:8080/dv/zhejiang_gdp.html?address=%E6%9D%AD%E5%B7%9E?year=2016">GDP</a></li>
+        <li style="  -webkit-transform:skew(20deg);"><a href="index.html">固定资产</a></li>
+    </ul>
+</div>
+<div id="main1" style="height:400px;width:800px;margin-top:50px;margin-left:240px;"></div>
+<script src="js/echarts.js"></script>
+<script src="js/theme/macarons.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main1'), 'vintage');
+    //  var uploadedDataURL = "/asset/get/s/data-1461584707906-r1hSmtsx.json";
+
+    myChart.showLoading();
+
+    $.getJSON('zhejiang.json', function (geoJson) {
+
+        myChart.hideLoading();
+
+        echarts.registerMap('ZJ', geoJson);
+
+        myChart.setOption(option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}<br/>{c} (亿元)'
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    dataView: {readOnly: false},
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            visualMap: {
+                min: 800,
+                max: 50000,
+                text: ['High', 'Low'],
+                realtime: false,
+                calculable: true,
+                //    color: ['orangered','yellow','lightskyblue']
+            },
+            series: [
+                {
+                    name: '浙江省2016年各市国民生产总值',
+                    type: 'map',
+                    mapType: 'ZJ', // 自定义扩展图表类型
+                    itemStyle: {
+                        normal: {label: {show: true}},
+                        emphasis: {label: {show: true}}
+                    },
+                    data: [
+                        {name: '丽水市', value: 1210.24},
+                        {name: '杭州市', value: 11313.72},
+                        {name: '温州市', value: 5101.56},
+                        {name: '宁波市', value: 8686.49},
+                        {name: '舟山市', value: 1241.20},
+                        {name: '台州市', value: 3898.66},
+                        {name: '金华市', value: 3635.01},
+                        {name: '绍兴市', value: 4789.03},
+                        {name: '衢州市', value: 1251.59},
+                        {name: '绍兴市', value: 27808.34},
+                        {name: '嘉兴市', value: 3862.11},
+                        {name: '湖州市', value: 2243.1}
+
+                    ],
+                    // 自定义名称映射
+
+                }
+            ]
+        });
+    });
+    //  myChart.setOption(option);
+</script>
+　　
+</body>
+</html>
