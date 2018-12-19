@@ -1,6 +1,5 @@
 var xdata = [];
 var ydata = [];
-var address = "";
 var url = location.search; //获取url中"?"符后的字串
 $.ajax({
     type: "post",
@@ -17,5 +16,4 @@ $.ajax({
         }
     }
 })
-console.log("xdata"+xdata)
-console.log("ydata"+ydata)
+
