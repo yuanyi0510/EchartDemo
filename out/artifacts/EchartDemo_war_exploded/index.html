@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/page.css" />
+	<!--图标样式-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css" />
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+</head>
+
+<body>
+<div class="s-side">
+	<ul>
+		<!--这部分是导航栏信息。-->
+		<li class="s-firstItem first">
+			<a href="#">
+				<i class="fa fa-home"></i>
+				<span>浙江省宏观经济</span>
+			</a>
+		</li>
+
+		<li class="first">
+			<div class="d-firstNav s-firstNav clearfix" onclick="pageClick(this)">
+				<i class="fa fa-bars"></i>
+				<span>杭州市</span>
+				<i class="fa fa-caret-right fr "></i>
+			</div>
+			<ul class="d-firstDrop s-firstDrop">
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>萧山</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>余杭</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>富阳</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>桐庐</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>淳安</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+					<i class="fa fa-minus-square-o"></i>
+					<span>建德</span>
+				</a>
+			</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>临安</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="first">
+			<div class="d-firstNav s-firstNav clearfix" onclick="pageClick(this)">
+				<i class="fa fa-bars"></i>
+				<span>宁波市</span>
+				<i class="fa fa-caret-right fr "></i>
+			</div>
+			<ul class="d-firstDrop s-firstDrop">
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>海曙</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>江北</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>镇海</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>北仑</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>鄞州</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>奉化</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>余姚</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>慈溪</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>宁海</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>象山</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="first">
+			<div class="d-firstNav s-firstNav clearfix" onclick="pageClick(this)">
+				<i class="fa fa-bars"></i>
+				<span>嘉兴市</span>
+				<i class="fa fa-caret-right fr "></i>
+			</div>
+			<ul class="d-firstDrop s-firstDrop">
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>南湖</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>秀洲</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>嘉善</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>海盐</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>海宁</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>平湖</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>桐乡</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="first">
+			<div class="d-firstNav s-firstNav clearfix" onclick="pageClick(this)">
+				<i class="fa fa-bars"></i>
+				<span>绍兴市</span>
+				<i class="fa fa-caret-right fr "></i>
+			</div>
+			<ul class="d-firstDrop s-firstDrop">
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>越城</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>柯桥</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>上虞</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>诸暨</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>嵊州</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>新昌</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="first">
+			<div class="d-firstNav s-firstNav clearfix" onclick="pageClick(this)">
+				<i class="fa fa-bars"></i>
+				<span>金华市</span>
+				<i class="fa fa-caret-right fr "></i>
+			</div>
+			<ul class="d-firstDrop s-firstDrop">
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>兰溪</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>义乌</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>东阳</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>永康</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>武义</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>浦江</span>
+					</a>
+				</li>
+				<li class="s-secondItem">
+					<a href="#" onclick="pageClick(this)">
+						<i class="fa fa-minus-square-o"></i>
+						<span>磐安</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="top">
+	<div class="leftTiyle" id="flTitle">浙江省</div>
+</div>
+<div class="content">
+	<iframe id="showcharts" src="analysis_charts.html" width="100%" frameborder="0" scrolling="auto" height="1000px" ></iframe>
+</div>
+</body>
+</html>

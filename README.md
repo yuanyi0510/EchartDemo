@@ -44,6 +44,8 @@
 
 2. JDBC连接池——DBCP
 
+   所需jar包[百度云](https://pan.baidu.com/s/1jhriYgS9m_wr_yDcT3Esng)
+
    ```java
    public class JDBCUtils {
        private static DataSource dataSource;
@@ -231,7 +233,7 @@
    ```
 
 
-3. ajax异步请求数据
+1. ajax异步请求数据
 
    ```javascript
    var xdata = [];//x轴
